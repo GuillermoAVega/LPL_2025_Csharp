@@ -55,7 +55,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Informaci&oacute;n:</h6>
                         <a class="collapse-item" href="/Localidad/">Localidades</a>
-                        <a class="collapse-item" href="/Marcas">Marcas</a>
+                        <a class="collapse-item" href="/Marca">Marcas</a>
 						<a class="collapse-item" href="/Bancos">Bancos</a>
 						<a class="collapse-item" href="/MPagos">Medios de pago</a>
 						<a class="collapse-item" href="/Sucursales">Sucursales</a>

@@ -75,6 +75,7 @@
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LocalidadController.cs" />
+    <Compile Include="Controllers\MarcaController.cs" />
     <Compile Include="Controllers\ProductoController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="db\AccessDB.cs" />
@@ -140,6 +141,7 @@
     </Compile>
     <Compile Include="Models\ClienteModel.cs" />
     <Compile Include="Models\LocalidadModels.cs" />
+    <Compile Include="Models\MarcaModel.cs" />
     <Compile Include="Models\ProductoModel.cs" />
     <Compile Include="Models\UsuarioModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -1862,6 +1864,10 @@
     <Content Include="Views\Cliente\Index.aspx" />
     <Content Include="Views\Localidad\Create.aspx" />
     <Content Include="Views\Localidad\Index.aspx" />
+    <Content Include="Views\Localidad\Show.aspx" />
+    <Content Include="Views\Marca\Create.aspx" />
+    <Content Include="Views\Marca\Index.aspx" />
+    <Content Include="Views\Marca\Show.aspx" />
     <Content Include="Views\Producto\Index.aspx" />
     <Content Include="Views\Usuario\Inicio.aspx" />
     <Content Include="Views\Usuario\Index.aspx" />

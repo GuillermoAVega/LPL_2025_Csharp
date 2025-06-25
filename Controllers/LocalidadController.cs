@@ -35,7 +35,40 @@ namespace WebDemo.Controllers
             
             return RedirectToAction("/Create");            
         }
-        
+
+//show
+        public ActionResult Show(int codigo)
+        {
+            var localidad = Localidad.FindByKeyStatic(codigo);
+            if (localidad == null)
+                return Redirect("/Localidad");
+
+            var model = new LocalidadModel
+            {
+                Nombre = localidad.Nombre
+            };
+            model.CodigoPostal = codigo;
+            return View(model); // esto carga la vista Show.aspx con el modelo
+        }
+
+// update
+        [HttpPost]
+        public ActionResult Update(LocalidadModel model)
+        {
+            model.LocalidadesList = MarcaStatic.GetListado();
+            if (!ModelState.IsValid)
+                return View(model);
+
+            Localidad localidad = Localidad.FindByKeyStatic(model.CodigoPostal);
+            localidad.Codigo = model.CodigoPostal;
+            localidad.Nombre = model.Nombre;
+
+            if (!localidad.SaveObj())
+                return Redirect("/LocalidadError");
+            return RedirectToAction("/Localidad");
+        }
+
+//listar
         public ActionResult Listar()
         {
             var datatable = new DataTableLocalidad { data = Localidad.FindAllStatic().Select(e => new LocalidadModel { CodigoPostal = e.Codigo, Nombre = e.Nombre }).ToList() };

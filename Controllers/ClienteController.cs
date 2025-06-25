@@ -25,17 +25,7 @@ namespace WebDemo.Controllers
             return View(model);
         }
         
-        public ActionResult Show(int codigoUsuario)
-        {            
-            var cli = Cliente.FindByKeyStatic(codigoUsuario);
-            if (cli == null)
-                return Redirect("/Cliente");
-            var model = new ClienteModel { Cuil = cli.Cuil,RazonSocial = cli.RazonSocial,Celular=cli.Celular,Direccion=cli.Direccion, CodPostal=cli.CodPostal,Clave=cli.Clave,ConfirmaClave=cli.Clave, Email=cli.Email,
-                                           LocalidadesList = LocalidadStatic.GetListado(), Usuario=cli.Usuario};
-            model.Codigo = codigoUsuario;
-            
-            return View(model);
-        }
+        
         [HttpPost]
         public ActionResult Create(ClienteModel model)        
         {
@@ -60,12 +50,38 @@ namespace WebDemo.Controllers
 
             return RedirectToAction("/Create");            
         }
+
+        public ActionResult Show(int codigoUsuario)
+        {
+            var cli = Cliente.FindByKeyStatic(codigoUsuario);
+            if (cli == null)
+                return Redirect("/Cliente");
+            var model = new ClienteModel
+            {
+                Cuil = cli.Cuil,
+                RazonSocial = cli.RazonSocial,
+                Celular = cli.Celular,
+                Direccion = cli.Direccion,
+                CodPostal = cli.CodPostal,
+                Clave = cli.Clave,
+                ConfirmaClave = cli.Clave,
+                Email = cli.Email,
+                LocalidadesList = LocalidadStatic.GetListado(),
+                Usuario = cli.Usuario
+            };
+            model.Codigo = codigoUsuario;
+
+            return View(model);
+        }
+
+
         [HttpPost]
         public ActionResult Update(ClienteModel model)
         {
             model.LocalidadesList = LocalidadStatic.GetListado();
             if (!ModelState.IsValid)
                 return View(model);
+
             Cliente cli = Cliente.FindByKeyStatic(model.Codigo);
             cli.Usuario = model.Usuario;
             cli.Clave = model.Clave;
@@ -79,6 +95,8 @@ namespace WebDemo.Controllers
                 Redirect("/ClienteError");
             return RedirectToAction("/");            
         }
+
+
         public ActionResult ClienteError()
         {
             return View(); 

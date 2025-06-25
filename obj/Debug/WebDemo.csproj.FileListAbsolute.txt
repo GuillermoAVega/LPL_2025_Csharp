@@ -34,3 +34,21 @@ C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion 
 C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\obj\Debug\WebDemo.csprojResolveAssemblyReference.cache
 C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\obj\Debug\WebDemo.dll
 C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\obj\Debug\WebDemo.pdb
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\WebDemo.dll
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\WebDemo.pdb
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\Newtonsoft.Json.dll
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\Npgsql.dll
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\Mono.Security.dll
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\Newtonsoft.Json.pdb
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\Newtonsoft.Json.xml
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\Npgsql.pdb
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\Npgsql.xml
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\de\Npgsql.resources.dll
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\es\Npgsql.resources.dll
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\fi\Npgsql.resources.dll
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\fr\Npgsql.resources.dll
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\ja\Npgsql.resources.dll
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\zh-CN\Npgsql.resources.dll
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\obj\Debug\WebDemo.csprojResolveAssemblyReference.cache
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\obj\Debug\WebDemo.dll
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\obj\Debug\WebDemo.pdb

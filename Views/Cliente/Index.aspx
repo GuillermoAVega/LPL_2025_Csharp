@@ -6,7 +6,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 <script src="../../Content/vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="../../Content/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<script src="../../Content/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
 <h1 class="h3 mb-0 text-gray-800">Clientes</h1>
 </div>
