@@ -25,7 +25,6 @@ namespace WebDemo.Controllers
         [HttpPost]
         public ActionResult Create(LocalidadModel model)
         {
-            model.EsCreacion = true; // En Create
             if (!ModelState.IsValid)
                 return View(model);
 
@@ -57,18 +56,12 @@ namespace WebDemo.Controllers
             public ActionResult Update(LocalidadModel model)
             {
                 model.LocalidadesList = MarcaStatic.GetListado();
-                model.EsCreacion = false; // En Update
+
                 if (!ModelState.IsValid)
                     return View("Show", model);
 
             Localidad localidad = Localidad.FindByKeyStatic(model.CodigoPostal);
 
-            if (localidad == null)
-            {
-                // Podés manejar el error como prefieras
-                ModelState.AddModelError("", "No se encontró la localidad con ese código postal.");
-                return View("Show", model);
-            }
             localidad.Nombre = model.Nombre;
 
             if (localidad.SaveObj())

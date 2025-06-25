@@ -47,24 +47,11 @@ namespace WebDemo.Models
         public override bool IsValid(object value)
         {
             PropertyDescriptorCollection properties = TypeDescriptor.GetProperties(value);
-
-             // Si es edición, no validamos
-             object esCreacionValue = properties.Find("EsCreacion", true).GetValue(value);
-             if (esCreacionValue != null && esCreacionValue is bool && !(bool)esCreacionValue)
-                return true;
-
             object originalValue = properties.Find(CodPostalProperty, true).GetValue(value);
-
-            if (originalValue == null)
-                return false;
-
-            int codigo;
-            if (!int.TryParse(originalValue.ToString(), out codigo))
-                return false;
-
-            var Loc = Localidad.FindByKeyStatic(codigo);
+            var Loc = Localidad.FindByKeyStatic(originalValue);
             return Loc == null;
-          
+            // Buscar en la Base
+            //return false;
         }
     }
 
@@ -73,8 +60,6 @@ namespace WebDemo.Models
 
     public class LocalidadModel
     {
-        public bool EsCreacion { get; set; }
-
 
         [Required]
         [DisplayName("Codigo Postal")]
