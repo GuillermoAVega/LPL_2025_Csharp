@@ -1,0 +1,8 @@
+*.o
+*.exe
+*.zip
+*.doc
+*.chm
+*.png
+*.log
+Web.config

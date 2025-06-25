@@ -25,9 +25,7 @@
             "language": { "url": "/Content/js/Spanish.json" },
             "ajax": '/Localidad/Listar',
             "columns": [{ "data": "CodigoPostal" }, { "data": "Nombre" },{"data":null}],
-            "columnDefs":[{"targets": 2 ,"render":function (data, type, row, meta) {
-            return "-";
-        }}]
+            "columnDefs": [{ "targets": 2, "render": function (data, type, row, meta) { return "<a href='/Localidad/Show?Codigo=" + data.CodigoPostal + "'>editar</a>"; } }]
         });
     }, 150);
 

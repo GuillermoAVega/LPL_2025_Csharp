@@ -25,17 +25,59 @@ namespace WebDemo.Controllers
         [HttpPost]
         public ActionResult Create(LocalidadModel model)
         {
+            model.EsCreacion = true; // En Create
             if (!ModelState.IsValid)
                 return View(model);
-                
-            Localidad loc = new Localidad { Codigo = model.CodigoPostal, Nombre = model.Nombre };
 
-            if (loc.SaveObj())
-                    Redirect("/Localidad");
+            Localidad localidad = new Localidad { Codigo = model.CodigoPostal, Nombre = model.Nombre };
+
+            if (localidad.SaveObj())
+                    return Redirect("/Localidad");
             
             return RedirectToAction("/Create");            
         }
-        
+
+//show
+        public ActionResult Show(int codigo)
+        {
+            var localidad = Localidad.FindByKeyStatic(codigo);
+            if (localidad == null)
+                return Redirect("/Localidad");
+
+            var model = new LocalidadModel
+            {
+                Nombre = localidad.Nombre
+            };
+            model.CodigoPostal = codigo;
+            return View(model); // esto carga la vista Show.aspx con el modelo
+        }
+
+// update
+            [HttpPost]
+            public ActionResult Update(LocalidadModel model)
+            {
+                model.LocalidadesList = MarcaStatic.GetListado();
+                model.EsCreacion = false; // En Update
+                if (!ModelState.IsValid)
+                    return View("Show", model);
+
+            Localidad localidad = Localidad.FindByKeyStatic(model.CodigoPostal);
+
+            if (localidad == null)
+            {
+                // Podés manejar el error como prefieras
+                ModelState.AddModelError("", "No se encontró la localidad con ese código postal.");
+                return View("Show", model);
+            }
+            localidad.Nombre = model.Nombre;
+
+            if (localidad.SaveObj())
+                return Redirect("/Localidad");
+
+            return RedirectToAction("/Show");     
+        }
+
+//listar
         public ActionResult Listar()
         {
             var datatable = new DataTableLocalidad { data = Localidad.FindAllStatic().Select(e => new LocalidadModel { CodigoPostal = e.Codigo, Nombre = e.Nombre }).ToList() };

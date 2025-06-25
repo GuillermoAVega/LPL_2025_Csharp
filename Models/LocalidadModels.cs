@@ -38,24 +38,44 @@ namespace WebDemo.Models
         {
             return String.Format(CultureInfo.CurrentUICulture, ErrorMessageString,CodPostalProperty);
         }
+
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
             return ValidationResult.Success;
         }
-        public override bool IsValid(object value ) 
+
+        public override bool IsValid(object value)
         {
             PropertyDescriptorCollection properties = TypeDescriptor.GetProperties(value);
-            object originalValue = properties.Find(CodPostalProperty, true ).GetValue(value);
-            var Loc  = Localidad.FindByKeyStatic(originalValue);
+
+             // Si es edición, no validamos
+             object esCreacionValue = properties.Find("EsCreacion", true).GetValue(value);
+             if (esCreacionValue != null && esCreacionValue is bool && !(bool)esCreacionValue)
+                return true;
+
+            object originalValue = properties.Find(CodPostalProperty, true).GetValue(value);
+
+            if (originalValue == null)
+                return false;
+
+            int codigo;
+            if (!int.TryParse(originalValue.ToString(), out codigo))
+                return false;
+
+            var Loc = Localidad.FindByKeyStatic(codigo);
             return Loc == null;
-            // Buscar en la Base
-            //return false;
+          
         }
     }
 
     [UniqueCodPostal("CodigoPostal", ErrorMessage = "Debe ingresar codigo postal unico.")]
+
+
     public class LocalidadModel
     {
+        public bool EsCreacion { get; set; }
+
+
         [Required]
         [DisplayName("Codigo Postal")]
         public int CodigoPostal { get; set; }
@@ -63,6 +83,8 @@ namespace WebDemo.Models
         [Required]        
         [DisplayName("Nombre")]
         public string Nombre { get; set; }
+
+        public List<SelectListItem> LocalidadesList { get; set; }
     }
     public class DataTableLocalidad
     {
