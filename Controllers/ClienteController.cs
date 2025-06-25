@@ -106,5 +106,16 @@ namespace WebDemo.Controllers
             var datatable = new DataTableCliente { data = Cliente.FindAllStatic().Select(e => new ClienteModelViewList { Clave=e.Clave,Localidad = e.LocalidadObj.Nombre,  Codigo = e.Codigo, RazonSocial = e.RazonSocial, Usuario = e.Usuario, Email = e.Email, Celular = e.Celular, Cuil = e.Cuil, Direccion = e.Direccion }).ToList() };
             return Content(JsonConvert.SerializeObject(datatable));
         }
+
+
+        public ActionResult Listado()
+        {
+            var model = new List<SelectListItem>();
+
+            model = LocalidadStatic.GetListado();
+
+            return View(model);
+        }
+
     }
 }

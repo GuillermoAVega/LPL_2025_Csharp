@@ -57,17 +57,19 @@ namespace WebDemo.Controllers
             {
                 model.LocalidadesList = MarcaStatic.GetListado();
 
-                if (!ModelState.IsValid)
-                    return View("Show", model);
+
 
             Localidad localidad = Localidad.FindByKeyStatic(model.CodigoPostal);
+            if (localidad != null)
+            {
+                localidad.Nombre = model.Nombre;
+                if (localidad.SaveObj())
+                    return Redirect("/Localidad");
 
-            localidad.Nombre = model.Nombre;
+                return RedirectToAction("/Show"); 
+            }
 
-            if (localidad.SaveObj())
-                return Redirect("/Localidad");
-
-            return RedirectToAction("/Show");     
+            return View("Show", model);   
         }
 
 //listar

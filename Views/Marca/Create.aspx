@@ -11,6 +11,7 @@
     </div>
 </div>
 <br />
+
     <% using (Html.BeginForm("Create","Marca", FormMethod.Post )) { %>
     <%: Html.ValidationSummary( "Verificar Marca no creada.") %>
     <fieldset>

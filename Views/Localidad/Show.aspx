@@ -18,11 +18,14 @@
 
 
 <div class="row">
+    
     <div class="col-md-2"><%: Html.LabelFor(m => m.Nombre) %></div>
     <div class="col-md-2"><%: Html.TextBoxFor(m => m.Nombre)%>
     <%: Html.ValidationMessageFor(m => m.Nombre)%></div>
 </div>  
-
+<div class="row">
+    <%: Html.HiddenFor(m => m.CodigoPostal)%>
+</div>
     
     <div class="row">
         <div class="col-md-2">
