@@ -36,7 +36,8 @@ namespace AltaLlantaCo.db
                 if (this.ValidacionSucursalGuardar != null)
                 {
                     // Validaciones de los datos que deben estar cargados para tener una tupla de datos valida
-                    
+                    if (Nombre == "")
+                        ValidacionSucursalGuardar("No se puede poner Nombre vacio");
                 }
             }
             return ORMDB<Sucursal>.SaveObject(this);

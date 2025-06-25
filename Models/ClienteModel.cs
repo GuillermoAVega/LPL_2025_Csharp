@@ -144,6 +144,10 @@ namespace WebDemo.Models
         public string Direccion { get; set; }
         public string Localidad { get; set; }
         public string Celular { get; set; }
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
     public class DataTableCliente
     {

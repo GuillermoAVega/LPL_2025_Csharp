@@ -61,6 +61,17 @@ namespace AltaLlantaCo.db
         // -- TODO --
         #region Relaciones con otras entidades
         //Localidad
+        public Localidad LocalidadObj
+        {
+            get
+            {
+                if (_localidadObj == null && _cod_postal != 0)
+                {
+                    _localidadObj = Localidad.FindByKeyStatic(_cod_postal);
+                }
+                return _localidadObj;
+            }
+        } 
         #endregion
        
     }

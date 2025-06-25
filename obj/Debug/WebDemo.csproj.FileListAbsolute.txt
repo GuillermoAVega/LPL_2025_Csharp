@@ -16,3 +16,42 @@ c:\users\msantander\documents\visual studio 2010\Projects\WebDemo\WebDemo\bin\zh
 C:\Users\msantander\Documents\Visual Studio 2010\Projects\WebDemo\WebDemo\bin\Newtonsoft.Json.dll
 C:\Users\msantander\Documents\Visual Studio 2010\Projects\WebDemo\WebDemo\bin\Newtonsoft.Json.pdb
 C:\Users\msantander\Documents\Visual Studio 2010\Projects\WebDemo\WebDemo\bin\Newtonsoft.Json.xml
+<<<<<<< HEAD
+=======
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\WebDemo.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\WebDemo.pdb
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\Newtonsoft.Json.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\Npgsql.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\Mono.Security.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\Newtonsoft.Json.pdb
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\Newtonsoft.Json.xml
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\Npgsql.pdb
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\Npgsql.xml
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\de\Npgsql.resources.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\es\Npgsql.resources.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\fi\Npgsql.resources.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\fr\Npgsql.resources.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\ja\Npgsql.resources.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\zh-CN\Npgsql.resources.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\obj\Debug\WebDemo.csprojResolveAssemblyReference.cache
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\obj\Debug\WebDemo.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\obj\Debug\WebDemo.pdb
+C:\Users\Emiliano\LPL_C#_2025\LPL_2025_Csharp\bin\WebDemo.dll
+C:\Users\Emiliano\LPL_C#_2025\LPL_2025_Csharp\bin\WebDemo.pdb
+C:\Users\Emiliano\LPL_C#_2025\LPL_2025_Csharp\bin\Newtonsoft.Json.dll
+C:\Users\Emiliano\LPL_C#_2025\LPL_2025_Csharp\bin\Npgsql.dll
+C:\Users\Emiliano\LPL_C#_2025\LPL_2025_Csharp\bin\Mono.Security.dll
+C:\Users\Emiliano\LPL_C#_2025\LPL_2025_Csharp\bin\Newtonsoft.Json.pdb
+C:\Users\Emiliano\LPL_C#_2025\LPL_2025_Csharp\bin\Newtonsoft.Json.xml
+C:\Users\Emiliano\LPL_C#_2025\LPL_2025_Csharp\bin\Npgsql.pdb
+C:\Users\Emiliano\LPL_C#_2025\LPL_2025_Csharp\bin\Npgsql.xml
+C:\Users\Emiliano\LPL_C#_2025\LPL_2025_Csharp\bin\de\Npgsql.resources.dll
+C:\Users\Emiliano\LPL_C#_2025\LPL_2025_Csharp\bin\es\Npgsql.resources.dll
+C:\Users\Emiliano\LPL_C#_2025\LPL_2025_Csharp\bin\fi\Npgsql.resources.dll
+C:\Users\Emiliano\LPL_C#_2025\LPL_2025_Csharp\bin\fr\Npgsql.resources.dll
+C:\Users\Emiliano\LPL_C#_2025\LPL_2025_Csharp\bin\ja\Npgsql.resources.dll
+C:\Users\Emiliano\LPL_C#_2025\LPL_2025_Csharp\bin\zh-CN\Npgsql.resources.dll
+C:\Users\Emiliano\LPL_C#_2025\LPL_2025_Csharp\obj\Debug\WebDemo.csprojResolveAssemblyReference.cache
+C:\Users\Emiliano\LPL_C#_2025\LPL_2025_Csharp\obj\Debug\WebDemo.dll
+C:\Users\Emiliano\LPL_C#_2025\LPL_2025_Csharp\obj\Debug\WebDemo.pdb
+>>>>>>> b7fcda8 (Sucursal:Completa-Medio:Pago:Incompleto)

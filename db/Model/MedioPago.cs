@@ -39,10 +39,20 @@ namespace AltaLlantaCo.db
             set { _cod_banco = value; }
         }
         #endregion        
-
+        
         // -- TODO --
         #region Relaciones con otras entidades
-        //Banco
+        public Banco BancoObj
+        {
+            get
+            {
+                if (_bancoObj == null && _cod_banco != 0)
+                {
+                    _bancoObj = Banco.FindByKeyStatic(_cod_banco);
+                }
+                return _bancoObj;
+            }
+        }
         #endregion
     }
 

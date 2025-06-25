@@ -52,5 +52,5 @@ namespace AltaLlantaCo.db
         {
             return ORMDB<Localidad>.FindbyKey(key);
         }
-    }
+    }  
 }
