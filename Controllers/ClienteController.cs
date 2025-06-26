@@ -89,5 +89,36 @@ namespace WebDemo.Controllers
             var datatable = new DataTableCliente { data = Cliente.FindAllStatic().Select(e => new ClienteModelViewList { Clave=e.Clave,Localidad = e.LocalidadObj.Nombre,  Codigo = e.Codigo, RazonSocial = e.RazonSocial, Usuario = e.Usuario, Email = e.Email, Celular = e.Celular, Cuil = e.Cuil, Direccion = e.Direccion }).ToList() };
             return Content(JsonConvert.SerializeObject(datatable));
         }
+
+        //Listado mejores compradores
+
+        public ActionResult ListadoCompradores() 
+        {
+            var model = ClienteModelStatic.GetListadoMejoresCompradores();
+
+            return View(model); 
+        }
+
+        public ActionResult ListarCompradores() 
+        {
+            var datatable = new DataTableComprador {
+                data = ClienteModelStatic.GetListadoMejoresCompradores().Select(e => new MejorCompradorView{
+
+                    Codigo = e.Codigo,
+                    Cuil = e.Cuil,
+                    Usuario = e.Usuario,
+                    RazonSocial = e.RazonSocial,
+                    Email = e.Email,
+                    Direccion = e.Direccion,
+                    Localidad = e.Localidad,
+                    Celular = e.Celular,
+                    CantidadCompras = e.CantidadCompras
+
+            }).ToList() };
+
+            return Content(JsonConvert.SerializeObject(datatable));
+        }
+
+
     }
 }

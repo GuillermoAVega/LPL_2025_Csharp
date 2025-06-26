@@ -112,29 +112,64 @@ namespace WebDemo.Controllers
             return View();
         }
 
-        /*
+
         public ActionResult Listar()
         {
-            var datatable = new DataTableProducto { data = Producto.FindAllStatic().Select(e => new ProductoModelViewList {
-                Descripcion = e.Descripcion,
-                Marca = e.MarcaObj.Descripcion,
-                Categoria = e.CategoriaObj.Descripcion,
-                Precio = e.Precio,
-                Stock = e.Stock,
-                Disponibilidad = e.Disponible
+            var datatable = new DataTableProducto { data = Producto.FindAllStatic().Select(e => new ProductoModelViewList { 
+                Codigo = e.Codigo, 
+                Descripcion = e.Descripcion, 
+                Marca = e.MarcaObj.Descripcion, 
+                Categoria = e.CategoriaObj.Descripcion, 
+                Precio = e.Precio, 
+                Stock = e.Stock, 
+                Disponibilidad = e.Disponible? "Si" : "No"
             }).ToList() };
+
             return Content(JsonConvert.SerializeObject(datatable));
         }
-        */
 
-
-
-
-        public ActionResult Listar()
+        public ActionResult Listado()
         {
-            var datatable = new DataTableProducto { data = Producto.FindAllStatic().Select(e => new ProductoModelViewList { Codigo = e.Codigo, Descripcion = e.Descripcion, Marca = e.MarcaObj.Descripcion, Categoria = e.CategoriaObj.Descripcion, Precio = e.Precio, Stock = e.Stock, Disponibilidad = e.Disponible.ToString() }).ToList() };
-            return Content(JsonConvert.SerializeObject(datatable));
+            var model = new ListadoModel
+            {
+                Marcas = MarcaStatic.GetListado(),
+                Categorias = CategoriaStatic.GetListado()
+
+            };
+
+            return View(model);
         }
+
+
+
+
+        //Logica para listado de productos mas vendidos.
+
+        public ActionResult ListarMasVendidos() 
+        {
+            var datatable = new DataTableProductoVendido
+            {
+                data = ProductoModelStatic.GetListadoMasVendidos().Select(e => new ProductoVendidoView
+                {
+                    Codigo = e.Codigo,
+                    Cantidad = e.Cantidad,
+                    Descripcion = e.Descripcion,
+                    Marca = e.Marca,
+                    Categoria = e.Categoria
+
+                }).ToList()
+            };
+            return Content(JsonConvert.SerializeObject(datatable)); 
+        }
+
+        public ActionResult ListadoMasVendidos()
+        {
+            var model = ProductoModelStatic.GetListadoMasVendidos();
+
+            return View(model);
+        }
+
+
     }
 
 

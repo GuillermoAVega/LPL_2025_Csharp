@@ -140,6 +140,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\BancoModel.cs" />
+    <Compile Include="Models\CategoriaModel.cs" />
     <Compile Include="Models\ClienteModel.cs" />
     <Compile Include="Models\LocalidadModels.cs" />
     <Compile Include="Models\MarcaModel.cs" />
@@ -1864,6 +1865,7 @@
     <Content Include="Views\Banco\index.aspx" />
     <Content Include="Views\Banco\Show.aspx" />
     <Content Include="Views\Cliente\ClienteError.aspx" />
+    <Content Include="Views\Cliente\ListadoCompradores.aspx" />
     <Content Include="Views\Cliente\Show.aspx" />
     <Content Include="Views\Cliente\Create.aspx" />
     <Content Include="Views\Cliente\Index.aspx" />
@@ -1872,6 +1874,8 @@
     <Content Include="Views\Localidad\Index.aspx" />
     <Content Include="Views\Producto\Create.aspx" />
     <Content Include="Views\Producto\Index.aspx" />
+    <Content Include="Views\Producto\Listado.aspx" />
+    <Content Include="Views\Producto\ListadoMasVendidos.aspx" />
     <Content Include="Views\Producto\Show.aspx" />
     <Content Include="Views\Usuario\Inicio.aspx" />
     <Content Include="Views\Usuario\Index.aspx" />

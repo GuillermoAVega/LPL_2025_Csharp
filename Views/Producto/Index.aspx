@@ -22,7 +22,7 @@
             <th>Categoria</th>
             <th>Precio</th>
             <th>Stock</th>
-            <th>Disponibilidad</th>
+            <th>Disponible</th>
             <th>Acciones</th>
         </tr>
     </thead>

@@ -6,7 +6,7 @@ using System.Reflection;
 
 namespace AltaLlantaCo.db
 {
-    [Table(Name = "detalle_factura")]
+    [Table(Name = "det_factura")]
     public partial class DetalleFactura
     {
         #region variables locales

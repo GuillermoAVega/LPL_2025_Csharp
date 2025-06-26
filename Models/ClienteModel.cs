@@ -9,6 +9,13 @@ using AltaLlantaCo.db;
 using System.Web.Mvc;
 namespace WebDemo.Models
 {    
+    public struct InfoCliente
+    {
+        public int CantidadCompras;
+        public int Codigo;
+    }
+
+
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = true, Inherited = true)]
     public sealed class UniqueCuilAttribute : ValidationAttribute
     {
@@ -148,5 +155,90 @@ namespace WebDemo.Models
     public class DataTableCliente
     {
         public List<ClienteModelViewList> data { get; set; }
-    }   
+    }
+
+
+    //Logica listado de clientes que mas compraron
+
+
+    public class MejorCompradorView
+    {
+        public int Codigo { get; set; }
+        public string Cuil { get; set; }
+        public string Usuario{ get; set; }
+        public string RazonSocial { get; set; }
+        public string Email { get; set; }
+        public string Direccion { get; set; }
+        public string Localidad { get; set; }
+        public string Celular { get; set; }
+        public int CantidadCompras { get; set;}
+    }
+
+    public class DataTableComprador
+    {
+        public List<MejorCompradorView> data { get; set; }
+    }
+
+
+
+    public class ClienteModelStatic 
+    {
+
+        public static List<MejorCompradorView> GetListadoMejoresCompradores()
+        {
+            List<Cliente> listaClientes = Cliente.FindAllStatic();
+            List<InfoCliente> compradores = new List<InfoCliente>();
+
+            int cantidadCompras = 0;
+
+            foreach (var cliente in listaClientes)
+            {
+                
+                cantidadCompras = (Factura.FindAllStatic(String.Format("cod_cliente = {0}", cliente.Codigo))).Count;
+
+                compradores.Add(
+                    new InfoCliente
+                    {
+                        Codigo = cliente.Codigo,
+                        CantidadCompras = cantidadCompras
+                    }
+                );
+
+            }
+
+            compradores.Sort((x, y) => y.CantidadCompras.CompareTo(x.CantidadCompras));
+
+            List<MejorCompradorView> listaMejoresCompradores = new List<MejorCompradorView>();
+
+            for (int i = 0; i < compradores.Count && i < 3; i++)
+            {
+                Cliente cliente = Cliente.FindByKeyStatic(compradores[i].Codigo);
+                
+                listaMejoresCompradores.Add(
+                    new MejorCompradorView
+                    {
+                        Codigo = cliente.Codigo,
+                        Cuil = cliente.Cuil,
+                        Usuario = cliente.Usuario,
+                        RazonSocial = cliente.RazonSocial,
+                        Email = cliente.Email,
+                        Direccion = cliente.Direccion, 
+                        Localidad = cliente.LocalidadObj.Nombre,
+                        Celular = cliente.Celular,
+                        CantidadCompras = compradores[i].CantidadCompras
+                    }
+                );
+
+            }
+
+            return listaMejoresCompradores;
+        }
+
+    
+    }
+
+
+
+
+
 }
