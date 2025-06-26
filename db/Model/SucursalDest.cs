@@ -46,9 +46,38 @@ namespace AltaLlantaCo.db
 
         // -- TODO --
         #region Relaciones con otras entidades
-        //Sucursal Origen
-        //Sucursal Destino
+
+        public Sucursal SucursalOrigenObj
+        {
+            get
+            {
+                if (_sucursal_origenObj == null && CodigoSucOrigen != 0)
+                {
+                    _sucursal_origenObj = Sucursal.FindByKeyStatic(CodigoSucOrigen);
+                }
+                return _sucursal_origenObj;
+            }
+        }
+
+        public Sucursal SucursalDestinoObj
+        {
+            get
+            {
+                if (_sucursal_destinoObj == null && CodigoSucDestino != 0)
+                {
+                    _sucursal_destinoObj = Sucursal.FindByKeyStatic(CodigoSucDestino);
+                }
+                return _sucursal_destinoObj;
+            }
+        }
+
         #endregion
+
+
+        public override string ToString()
+        {
+            return string.Format("Sucursal Origen: {0} - Sucursal Destino: {1}", this._sucursal_origenObj.ToString(), this._sucursal_destinoObj.ToString());
+        }
 
     }
 

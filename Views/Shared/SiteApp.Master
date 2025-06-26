@@ -55,11 +55,11 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Informaci&oacute;n:</h6>
                         <a class="collapse-item" href="/Localidad/">Localidades</a>
-                        <a class="collapse-item" href="/Marcas">Marcas</a>
-						<a class="collapse-item" href="/Bancos">Bancos</a>
-						<a class="collapse-item" href="/MPagos">Medios de pago</a>
-						<a class="collapse-item" href="/Sucursales">Sucursales</a>
-						<a class="collapse-item" href="/Sucursalesdest">Rutas(Suc/Dest)</a>
+                        <a class="collapse-item" href="/Marca">Marcas</a>
+						<a class="collapse-item" href="/Banco">Bancos</a>
+						<a class="collapse-item" href="/MPago">Medios de pago</a>
+						<a class="collapse-item" href="/Sucursale">Sucursales</a>
+						<!-- <a class="collapse-item" href="/Ruta">Rutas(Suc/Dest)</a> -->
                     </div>
                 </div>
             </li>
@@ -95,7 +95,7 @@
             <hr class="sidebar-divider">            
             <li class="nav-item">
              <a class="nav-link" href="/Home/About">   				
-                    <span>Acerca de nosotros(Grupo)</span></a>            
+                    <span>Acerca de nosotros</span></a>            
             </li>
         </ul>
         <!-- End of Sidebar -->

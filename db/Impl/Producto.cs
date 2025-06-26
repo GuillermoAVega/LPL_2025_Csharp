@@ -23,6 +23,7 @@ namespace AltaLlantaCo.db
             // completar datos en this para dejarlo inicializado
             this.Codigo = agn.Codigo;
             this.CodCategoria = agn.CodCategoria;
+            this.Descripcion = agn.Descripcion;
             this.CodMarca = agn.CodMarca;
             this.Disponible = agn.Disponible;
             this.Precio = agn.Precio;

@@ -12,6 +12,7 @@ namespace AltaLlantaCo.db
         private int _codigo;
         private int _cod_categoria;
         private int _cod_marca;
+        private string _descripcion;
         private float _precio;
         private float _stock;
         private bool _disponible;
@@ -40,7 +41,15 @@ namespace AltaLlantaCo.db
                 _cod_categoria = value;
             }
         }
-        
+
+        [Propiedad(Name = "descripcion", Tipo = typeof(string))]
+        public string Descripcion
+        {
+            get { return _descripcion; }
+            set { _descripcion = value; }
+        }
+
+
         [Propiedad(Name = "cod_marca", Tipo = typeof(int))]
         public int CodMarca
         {
@@ -76,8 +85,30 @@ namespace AltaLlantaCo.db
         #endregion  
 
         #region Relaciones con otras entidades
-        //Marca
-        //Categoria
+
+        public Marca MarcaObj
+        {
+            get
+            {
+                if (_marca == null && _cod_marca != 0)
+                {
+                    _marca = Marca.FindByKeyStatic(_cod_marca);
+                }
+                return _marca;
+            }
+        }
+
+        public Categoria CategoriaObj
+        {
+            get
+            {
+                if (_categoria == null && _cod_categoria != 0)
+                {
+                    _categoria = Categoria.FindByKeyStatic(_cod_categoria);
+                }
+                return _categoria;
+            }
+        }
         #endregion
 
     }

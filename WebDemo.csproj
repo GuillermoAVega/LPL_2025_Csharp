@@ -72,6 +72,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\BancoController.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LocalidadController.cs" />
@@ -111,6 +112,7 @@
     <Compile Include="db\Model\Categoria.cs" />
     <Compile Include="db\Model\Compra.cs" />
     <Compile Include="db\Model\Bulto.cs" />
+    <Compile Include="db\Model\SucursalDest.cs" />
     <Compile Include="db\Model\TrackViaje.cs" />
     <Compile Include="db\Model\DetalleFactura.cs" />
     <Compile Include="db\Model\Factura.cs">
@@ -119,7 +121,6 @@
     <Compile Include="db\Model\Producto.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="db\Model\SucursalDest.cs" />
     <Compile Include="db\Model\Sucursal.cs" />
     <Compile Include="db\Model\Localidad.cs" />
     <Compile Include="db\Model\Marca.cs" />
@@ -138,9 +139,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\BancoModel.cs" />
     <Compile Include="Models\ClienteModel.cs" />
     <Compile Include="Models\LocalidadModels.cs" />
+    <Compile Include="Models\MarcaModel.cs" />
     <Compile Include="Models\ProductoModel.cs" />
+    <Compile Include="Models\SucursalDestModel.cs" />
     <Compile Include="Models\UsuarioModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -1856,13 +1860,19 @@
     <Content Include="Scripts\js\bootstrap.esm.min.js" />
     <Content Include="Scripts\js\bootstrap.js" />
     <Content Include="Scripts\js\bootstrap.min.js" />
+    <Content Include="Views\Banco\Create.aspx" />
+    <Content Include="Views\Banco\index.aspx" />
+    <Content Include="Views\Banco\Show.aspx" />
     <Content Include="Views\Cliente\ClienteError.aspx" />
     <Content Include="Views\Cliente\Show.aspx" />
     <Content Include="Views\Cliente\Create.aspx" />
     <Content Include="Views\Cliente\Index.aspx" />
+    <Content Include="Views\Error.aspx" />
     <Content Include="Views\Localidad\Create.aspx" />
     <Content Include="Views\Localidad\Index.aspx" />
+    <Content Include="Views\Producto\Create.aspx" />
     <Content Include="Views\Producto\Index.aspx" />
+    <Content Include="Views\Producto\Show.aspx" />
     <Content Include="Views\Usuario\Inicio.aspx" />
     <Content Include="Views\Usuario\Index.aspx" />
     <Content Include="Web.config" />

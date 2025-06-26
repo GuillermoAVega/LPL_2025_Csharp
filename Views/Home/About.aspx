@@ -5,8 +5,9 @@
 </asp:Content>
 
 <asp:Content ID="aboutContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2>Quienes somos (Grupo)</h2>
-    <p>
-        Listar....
-    </p>
+    <h2>Quienes somos Grupo 5</h2>
+    
+    <h6> Necul, Emiliano Germán </h6>
+    <h6> Soler, Franco Martín </h6>    
+    <h6> Vega, Guillermo Adrián </h6>
 </asp:Content>

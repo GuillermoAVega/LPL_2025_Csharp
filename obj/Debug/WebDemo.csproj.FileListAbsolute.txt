@@ -16,3 +16,39 @@ c:\users\msantander\documents\visual studio 2010\Projects\WebDemo\WebDemo\bin\zh
 C:\Users\msantander\Documents\Visual Studio 2010\Projects\WebDemo\WebDemo\bin\Newtonsoft.Json.dll
 C:\Users\msantander\Documents\Visual Studio 2010\Projects\WebDemo\WebDemo\bin\Newtonsoft.Json.pdb
 C:\Users\msantander\Documents\Visual Studio 2010\Projects\WebDemo\WebDemo\bin\Newtonsoft.Json.xml
+C:\Users\guill\Desktop\TpFinal_C#\obj\Debug\WebDemo.csprojResolveAssemblyReference.cache
+C:\Users\guill\Desktop\TpFinal_C#\obj\Debug\WebDemo.dll
+C:\Users\guill\Desktop\TpFinal_C#\bin\WebDemo.dll
+C:\Users\guill\Desktop\TpFinal_C#\bin\WebDemo.pdb
+C:\Users\guill\Desktop\TpFinal_C#\bin\Newtonsoft.Json.dll
+C:\Users\guill\Desktop\TpFinal_C#\bin\Npgsql.dll
+C:\Users\guill\Desktop\TpFinal_C#\bin\Mono.Security.dll
+C:\Users\guill\Desktop\TpFinal_C#\bin\Newtonsoft.Json.pdb
+C:\Users\guill\Desktop\TpFinal_C#\bin\Newtonsoft.Json.xml
+C:\Users\guill\Desktop\TpFinal_C#\bin\Npgsql.pdb
+C:\Users\guill\Desktop\TpFinal_C#\bin\Npgsql.xml
+C:\Users\guill\Desktop\TpFinal_C#\bin\de\Npgsql.resources.dll
+C:\Users\guill\Desktop\TpFinal_C#\bin\es\Npgsql.resources.dll
+C:\Users\guill\Desktop\TpFinal_C#\bin\fi\Npgsql.resources.dll
+C:\Users\guill\Desktop\TpFinal_C#\bin\fr\Npgsql.resources.dll
+C:\Users\guill\Desktop\TpFinal_C#\bin\ja\Npgsql.resources.dll
+C:\Users\guill\Desktop\TpFinal_C#\bin\zh-CN\Npgsql.resources.dll
+C:\Users\guill\Desktop\TpFinal_C#\obj\Debug\WebDemo.pdb
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\obj\Debug\WebDemo.csprojResolveAssemblyReference.cache
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\obj\Debug\WebDemo.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\WebDemo.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\WebDemo.pdb
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\Newtonsoft.Json.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\Npgsql.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\Mono.Security.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\Newtonsoft.Json.pdb
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\Newtonsoft.Json.xml
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\Npgsql.pdb
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\Npgsql.xml
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\de\Npgsql.resources.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\es\Npgsql.resources.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\fi\Npgsql.resources.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\fr\Npgsql.resources.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\ja\Npgsql.resources.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\zh-CN\Npgsql.resources.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\obj\Debug\WebDemo.pdb
