@@ -31,13 +31,21 @@
     </table>
 
     <br />
+
     <h2>Exportar listado</h2>
 
-    <input id="nombreArchivo" type="text" placeholder="Nombre del archivo" />
-
-    <button id="btnDescargar" style="background-color: #007bff; color: white; border-radius: 5px;">
+    <form method="post" action="/Cliente/ExportarListado">
+    <select id="formato" name="formato">
+        <option value="csv"> CSV </option>
+        <option value="txt" selected> TXT </option>
+    </select>
+    <label for="nombreArchivo"></label>
+    <input id="Text1" name="nombreArchivo" type="text" placeholder="Nombre del archivo" />
+    <button type="submit" style="background-color: #007bff; color: white; border-radius: 5px;">
         Descargar
     </button>
+
+    </form>
 
 
     <script type="text/javascript" >

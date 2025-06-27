@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using AltaLlantaCo.db;
 using WebDemo.Models;
 using Newtonsoft.Json;
+using System.Text;
 
 namespace WebDemo.Controllers
 {
@@ -122,6 +123,68 @@ namespace WebDemo.Controllers
             }).ToList() };
 
             return Content(JsonConvert.SerializeObject(datatable));
+        }
+
+
+
+        public ActionResult ExportarListado(string nombreArchivo, string formato)
+        {
+            // Assuming you have a method to get the file data as a byte array
+            var clientes = ClienteModelStatic.GetListadoMejoresCompradores();
+            byte[] archivoBytes;
+            string fileName;
+
+            if (formato == "csv")
+            {
+                // Generar archivo CSV
+                var csv = new StringBuilder();
+                csv.AppendLine("Cuil, Usuario , RazonSocial, Email, Direccion, Localidad, Celular, Compras Realizadas");
+
+                foreach (var cliente in clientes)
+                {
+                    csv.AppendLine(String.Format("{0},{1},{2},{3},{4},{5},{6},{7}", 
+                        cliente.Cuil,
+                        cliente.Usuario,
+                        cliente.RazonSocial, 
+                        cliente.Email,
+                        cliente.Direccion,
+                        cliente.Localidad,
+                        cliente.Celular,
+                        cliente.CantidadCompras
+                        ));
+                }
+
+                archivoBytes = System.Text.Encoding.UTF8.GetBytes(csv.ToString());
+                fileName = String.Format("{0}.csv", nombreArchivo);
+            }
+            else
+            {
+                // Generar archivo TXT
+                var txt = new StringBuilder();
+                txt.AppendLine(string.Format("{0,-15} {1,-15} {2,-20} {3,-25} {4,15} {5,20} {6,20} {7,25}", "Cuil", "Usuario", "RazonSocial", "Email", "Direccion", "Localidad", "Celular", "Compras Realizadas"));
+
+                txt.AppendLine(new string('-', 170)); // Separador
+
+                foreach (var cliente in clientes)
+                {
+                    txt.AppendLine(string.Format("{0,-15} {1,-15} {2,-20} {3,-25} {4,20} {5,20} {6,20} {7,10}",
+                        cliente.Cuil,
+                        cliente.Usuario,
+                        cliente.RazonSocial,
+                        cliente.Email,
+                        cliente.Direccion,
+                        cliente.Localidad,
+                        cliente.Celular,
+                        cliente.CantidadCompras
+                        ));
+                }
+
+                archivoBytes = System.Text.Encoding.UTF8.GetBytes(txt.ToString());
+                fileName = String.Format("{0}.txt", nombreArchivo);
+            }
+
+
+            return File(archivoBytes, "text/csv", fileName);
         }
 
 
