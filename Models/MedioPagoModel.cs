@@ -47,4 +47,75 @@ namespace WebDemo.Models
         }
     }
 
+    //Listar medios de pago mas usados
+    public struct InfoMedioPago
+    {
+        public int CantidadUsado;
+        public int Codigo;
+    }
+
+    public class MedioPagoMasUsadoView
+    {
+        public int Codigo { get; set; }
+        public string Descripcion { get; set; }
+        public string Banco { get; set; }
+        public int VecesUsado{ get; set; }
+    }
+
+    public class DataTableMedioUsado
+    {
+        public List<MedioPagoMasUsadoView> data { get; set; }
+    }
+
+
+
+    public class MedioPagoModelStatic
+    {
+
+        public static List<MedioPagoMasUsadoView> GetListadoMedioPagoMasUsado()
+        {
+            List<MedioPago> listaMedioPagos = MedioPago.FindAllStatic();
+            List<InfoMedioPago> mediosUsados = new List<InfoMedioPago>();
+
+            int cantidadUsado = 0;
+
+            foreach (var mPago in listaMedioPagos)
+            {
+
+                cantidadUsado = (Factura.FindAllStatic(String.Format("cod_mpago = {0}", mPago.Codigo))).Count;
+
+                mediosUsados.Add(
+                    new InfoMedioPago
+                    {
+                        Codigo = mPago.Codigo,
+                        CantidadUsado = cantidadUsado 
+                    }
+                );
+
+            }
+
+            mediosUsados.Sort((x, y) => y.CantidadUsado.CompareTo(x.CantidadUsado));
+
+            List<MedioPagoMasUsadoView> listaMediosMasUsados = new List<MedioPagoMasUsadoView>();
+
+            for (int i = 0; i < mediosUsados.Count && i < 3; i++)
+            {
+                MedioPago mPago = MedioPago.FindByKeyStatic(mediosUsados[i].Codigo);
+
+                listaMediosMasUsados.Add(
+                    new MedioPagoMasUsadoView
+                    {
+                        Codigo = mPago.Codigo,
+                        Descripcion= mPago.Descripcion,
+                        Banco = mPago.BancoObj.Nombre,
+                        VecesUsado = mediosUsados[i].CantidadUsado
+                    }
+                );
+
+            }
+
+            return listaMediosMasUsados;
+        }
+
+    }
 }

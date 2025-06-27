@@ -1867,6 +1867,7 @@
     <Content Include="Views\Localidad\Create.aspx" />
     <Content Include="Views\Localidad\Index.aspx" />
     <Content Include="Views\MedioPago\Create.aspx" />
+    <Content Include="Views\MedioPago\ListadoMasUsados.aspx" />
     <Content Include="Views\MedioPago\Index.aspx" />
     <Content Include="Views\MedioPago\Show.aspx" />
     <Content Include="Views\Producto\Index.aspx" />

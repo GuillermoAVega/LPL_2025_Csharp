@@ -75,12 +75,13 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="/Cliente/Listado">Clientes</a>
                         <a class="collapse-item" href="/Producto/Listado">Productos</a>
-                        <a class="collapse-item" href="#"></a>
+                        <a class="collapse-item" href="/MedioPago/Listado">Medios de Pago</a>
+                        <br />
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Especiales</h6>
                         <a class="collapse-item" href="#">Clientes que mas<br />compras hicieron</a>
                         <a class="collapse-item" href="#">Productos mas <br />vendidos</a>
-                        <a class="collapse-item" href="#">Medios de pago <br />mas usados</a>
+                        <a class="collapse-item" href="/MedioPago/ListadoMasUsados">Medios de pago <br />mas usados</a>
                     </div>
                 </div>
             </li>          

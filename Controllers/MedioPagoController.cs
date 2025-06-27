@@ -83,5 +83,31 @@ namespace WebDemo.Controllers
                 }).ToList() };
             return Content(JsonConvert.SerializeObject(datatable));
         }
+
+        //Listar medios mas usados
+        public ActionResult ListadoMasUsados()
+        {
+            var model = MedioPagoModelStatic.GetListadoMedioPagoMasUsado();
+
+            return View(model);
+        }
+
+        public ActionResult ListarMedios()
+        {
+            var datatable = new DataTableMedioUsado
+            {
+                data = MedioPagoModelStatic.GetListadoMedioPagoMasUsado().Select(e => new MedioPagoMasUsadoView
+                {
+
+                    Codigo = e.Codigo,  
+                    Descripcion = e.Descripcion,
+                    Banco = e.Banco,
+                    VecesUsado= e.VecesUsado
+
+                }).ToList()
+            };
+
+            return Content(JsonConvert.SerializeObject(datatable));
+        }
     }
 }
