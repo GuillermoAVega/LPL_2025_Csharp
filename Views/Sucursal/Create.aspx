@@ -5,7 +5,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row static-top shadow" > 
-    <div class="col-md-12">
+        <div class="col-md-12">
     <h2>Nueva Sucursal</h2>
     </div>
 </div>

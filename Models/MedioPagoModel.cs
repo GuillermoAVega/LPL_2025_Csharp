@@ -10,20 +10,36 @@ using System.Web.Mvc;
 
 namespace WebDemo.Models
 {
-    public class MPagoModel
+    public class MedioPagoModel
     {
         [Required]
         [DisplayName("Descripcion")]
         public string Descripcion { get; set; }
 
+        [DisplayName("Banco")]
+        public int CodBanco { get; set; }
+
+        public List<SelectListItem> BancosList { get; set; }
+
         public int Codigo { get; set; }
 
     }
-    public class DataTableMpago
+    public class MedioPagoModelViewList
     {
-        public List<MPagoModel> data { get; set; }
+        public int Codigo { get; set; }
+        public string Descripcion { get; set; }
+        public string Banco { get; set; }
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
-    public class MPagoStatic
+
+    public class DataTableMedioPago
+    {
+        public List<MedioPagoModelViewList> data { get; set; }
+    }
+    public class MedioPagoStatic
     {
         public static List<SelectListItem> GetListado()
         {

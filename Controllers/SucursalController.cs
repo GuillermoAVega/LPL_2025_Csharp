@@ -76,15 +76,10 @@ namespace WebDemo.Controllers
             suc.Telefono = model.Telefono;
 
             if (!suc.SaveObj())
-                Redirect("/SucursalError");
+                Redirect("/Error");
             return RedirectToAction("/");
         }
         
-        public ActionResult SucursalError()
-        {
-            return View();
-        }
-
 
         public ActionResult Listar()
         {

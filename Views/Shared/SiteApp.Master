@@ -57,7 +57,7 @@
                         <a class="collapse-item" href="/Localidad/">Localidades</a>
                         <a class="collapse-item" href="/Marcas">Marcas</a>
 						<a class="collapse-item" href="/Bancos">Bancos</a>
-						<a class="collapse-item" href="/MPago">Medios de pago</a>
+						<a class="collapse-item" href="/MedioPago">Medios de pago</a>
 						<a class="collapse-item" href="/Sucursal">Sucursales</a>
 						<a class="collapse-item" href="/Sucursalesdest">Rutas(Suc/Dest)</a>
                     </div>

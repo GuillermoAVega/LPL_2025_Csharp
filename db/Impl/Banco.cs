@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using AltaLlantaCo.db.orm;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.Globalization;
+using System.Web.Mvc;
+using System.Web.Security;
 
 namespace AltaLlantaCo.db
 {
@@ -53,4 +58,31 @@ namespace AltaLlantaCo.db
             return ORMDB<Banco>.FindbyKey(key);
         }
     }
+    public class BancoModel
+    {
+        [Required]
+        [DisplayName("Nombre")]
+        public string Nombre { get; set; }
+
+        [DisplayName("Direccion")]
+        public string Direccion { get; set; }
+
+        [DisplayName("Telefono")]
+        public string Telefono { get; set; }
+
+
+
+    }
+    public class DataTableBanco
+    {
+        public List<BancoModel> data { get; set; }
+    }
+    public class BancoStatic
+    {
+        public static List<SelectListItem> GetListado()
+        {
+            return Banco.FindAllStatic().Select(banco => new SelectListItem { Text = banco.Nombre, Value = banco.Codigo.ToString() }).ToList();
+        }
+    }
+
 }

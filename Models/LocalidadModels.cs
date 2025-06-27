@@ -21,11 +21,11 @@ namespace WebDemo.Models
         public UniqueCodPostalAttribute(string codpostalProperty)
             : base(_defaultErrorMessage)
         {
-            CodPostalProperty = codpostalProperty;            
+            CodPostalProperty = codpostalProperty;
         }
 
         public string CodPostalProperty { get; private set; }
-        
+
         public override object TypeId
         {
             get
@@ -36,17 +36,17 @@ namespace WebDemo.Models
 
         public override string FormatErrorMessage(string name)
         {
-            return String.Format(CultureInfo.CurrentUICulture, ErrorMessageString,CodPostalProperty);
+            return String.Format(CultureInfo.CurrentUICulture, ErrorMessageString, CodPostalProperty);
         }
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
             return ValidationResult.Success;
         }
-        public override bool IsValid(object value ) 
+        public override bool IsValid(object value)
         {
             PropertyDescriptorCollection properties = TypeDescriptor.GetProperties(value);
-            object originalValue = properties.Find(CodPostalProperty, true ).GetValue(value);
-            var Loc  = Localidad.FindByKeyStatic(originalValue);
+            object originalValue = properties.Find(CodPostalProperty, true).GetValue(value);
+            var Loc = Localidad.FindByKeyStatic(originalValue);
             return Loc == null;
             // Buscar en la Base
             //return false;
@@ -60,7 +60,7 @@ namespace WebDemo.Models
         [DisplayName("Codigo Postal")]
         public int CodigoPostal { get; set; }
 
-        [Required]        
+        [Required]
         [DisplayName("Nombre")]
         public string Nombre { get; set; }
     }
@@ -76,3 +76,4 @@ namespace WebDemo.Models
         }
     }
 }
+ 
