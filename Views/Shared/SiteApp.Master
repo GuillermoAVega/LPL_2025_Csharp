@@ -57,8 +57,8 @@
                         <a class="collapse-item" href="/Localidad/">Localidades</a>
                         <a class="collapse-item" href="/Marca">Marcas</a>
 						<a class="collapse-item" href="/Banco">Bancos</a>
-						<a class="collapse-item" href="/MPago">Medios de pago</a>
-						<a class="collapse-item" href="/Sucursale">Sucursales</a>
+						<a class="collapse-item" href="/MedioPago">Medios de pago</a>
+						<a class="collapse-item" href="/Sucursal">Sucursales</a>
 
 						<!-- <a class="collapse-item" href="/Ruta">Rutas(Suc/Dest)</a> -->
                     </div>
@@ -81,7 +81,7 @@
                         <h6 class="collapse-header">Especiales</h6>
                         <a class="collapse-item" href="/Cliente/ListadoCompradores">Clientes que mas<br />compras hicieron</a>
                         <a class="collapse-item" href="/Producto/ListadoMasVendidos">Productos mas <br />vendidos</a>
-                        <a class="collapse-item" href="#">Medios de pago <br />mas usados</a>
+                        <a class="collapse-item" href="/MedioPago/ListadoMasUsados">Medios de pago <br />mas usados</a>
 
                     </div>
                 </div>

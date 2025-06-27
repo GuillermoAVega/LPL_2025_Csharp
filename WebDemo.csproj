@@ -78,7 +78,9 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LocalidadController.cs" />
     <Compile Include="Controllers\MarcaController.cs" />
+    <Compile Include="Controllers\MedioPagoController.cs" />
     <Compile Include="Controllers\ProductoController.cs" />
+    <Compile Include="Controllers\SucursalController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="db\AccessDB.cs" />
     <Compile Include="db\IAccessDB.cs" />
@@ -148,8 +150,10 @@
     <Compile Include="Models\FacturaModel.cs" />
     <Compile Include="Models\LocalidadModels.cs" />
     <Compile Include="Models\MarcaModel.cs" />
+    <Compile Include="Models\MedioPagoModel.cs" />
     <Compile Include="Models\ProductoModel.cs" />
     <Compile Include="Models\SucursalDestModel.cs" />
+    <Compile Include="Models\SucursalModel.cs" />
     <Compile Include="Models\UsuarioModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -1882,11 +1886,18 @@
     <Content Include="Views\Marca\Create.aspx" />
     <Content Include="Views\Marca\Index.aspx" />
     <Content Include="Views\Marca\Show.aspx" />
+    <Content Include="Views\MedioPago\Create.aspx" />
+    <Content Include="Views\MedioPago\Index.aspx" />
+    <Content Include="Views\MedioPago\ListadoMasUsados.aspx" />
+    <Content Include="Views\MedioPago\Show.aspx" />
     <Content Include="Views\Producto\Create.aspx" />
     <Content Include="Views\Producto\Index.aspx" />
     <Content Include="Views\Producto\Listado.aspx" />
     <Content Include="Views\Producto\ListadoMasVendidos.aspx" />
     <Content Include="Views\Producto\Show.aspx" />
+    <Content Include="Views\Sucursal\Create.aspx" />
+    <Content Include="Views\Sucursal\Index.aspx" />
+    <Content Include="Views\Sucursal\Show.aspx" />
     <Content Include="Views\Usuario\Comprar.aspx" />
     <Content Include="Views\Usuario\CambioClave.aspx" />
     <Content Include="Views\Usuario\Inicio.aspx" />
