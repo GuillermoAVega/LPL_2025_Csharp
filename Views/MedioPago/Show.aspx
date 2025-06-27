@@ -23,10 +23,10 @@
         <%: Html.ValidationMessageFor(m => m.Descripcion)%></div>
     </div>    
 
-    <div class="row">
+   <div class="row">
         <div class="col-md-2"><%: Html.LabelFor(m => m.CodBanco) %></div>
         <div class="col-md-2">
-        <%: Html.PasswordFor(m => m.CodBanco)%>
+        <%: @Html.DropDownListFor(m =>  m.CodBanco,Model.BancosList, "Seleccione...", new { @style = "width:250px; text-align: left", @class = "btn btn-default dropdown-toggle" })%>
         <%: Html.ValidationMessageFor(m => m.CodBanco)%></div>
     </div>
 
