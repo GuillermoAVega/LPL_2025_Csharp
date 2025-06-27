@@ -90,11 +90,52 @@ namespace WebDemo.Controllers
         {
             return View(); 
         }
-        public ActionResult Listar()
+
+        public ActionResult Listar(int? codPostal)
         {
-            var datatable = new DataTableCliente { data = Cliente.FindAllStatic().Select(e => new ClienteModelViewList { Clave=e.Clave,Localidad = e.LocalidadObj.Nombre,  Codigo = e.Codigo, RazonSocial = e.RazonSocial, Usuario = e.Usuario, Email = e.Email, Celular = e.Celular, Cuil = e.Cuil, Direccion = e.Direccion }).ToList() };
-            return Content(JsonConvert.SerializeObject(datatable));
+            List<Cliente> clientes = Cliente.FindAllStatic();
+            List<Cliente> filtrados = new List<Cliente>();
+
+            if (codPostal.HasValue && codPostal.Value != 0)
+            {
+                foreach (Cliente c in clientes)
+                {
+                    if (c.CodPostal == codPostal.Value)
+                    {
+                        filtrados.Add(c);
+                    }
+                }
+            }
+            else
+            {
+                filtrados = clientes;
+            }
+
+            List<ClienteModelViewList> resultado = new List<ClienteModelViewList>();
+
+            foreach (Cliente e in filtrados)
+            {
+                ClienteModelViewList item = new ClienteModelViewList(); item.Codigo = e.Codigo;item.Cuil = e.Cuil;item.Usuario = e.Usuario;item.RazonSocial = e.RazonSocial;
+                item.Email = e.Email; item.Clave = e.Clave;item.Direccion = e.Direccion;item.Celular = e.Celular;item.Localidad = (e.LocalidadObj != null) ? e.LocalidadObj.Nombre : "";
+
+                resultado.Add(item);
+            }
+
+            DataTableCliente datatable = new DataTableCliente();
+            datatable.data = resultado;
+
+            return Content(JsonConvert.SerializeObject(datatable), "application/json");
         }
+
+        public ActionResult Listado()
+        {
+            var model = new List<SelectListItem>();
+
+            model = LocalidadStatic.GetListado();
+
+            return View(model);
+        }
+
 
         //Listado mejores compradores
 

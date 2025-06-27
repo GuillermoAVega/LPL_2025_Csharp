@@ -114,18 +114,38 @@ namespace WebDemo.Controllers
         }
 
 
-        public ActionResult Listar()
+        public ActionResult Listar(int? CodMarca, int? CodCategoria)
         {
-            var datatable = new DataTableProducto { data = Producto.FindAllStatic().Select(e => new ProductoModelViewList { 
-                Codigo = e.Codigo, 
-                Descripcion = e.Descripcion, 
-                Marca = e.MarcaObj.Descripcion, 
-                Categoria = e.CategoriaObj.Descripcion, 
-                Precio = e.Precio, 
-                Stock = e.Stock, 
-                Disponibilidad = e.Disponible? "Si" : "No"
-            }).ToList() };
+            List<Producto> productos = Producto.FindAllStatic();
+            List<Producto> filtrados = new List<Producto>();
 
+            foreach (var p in productos)
+            {
+                if ((CodMarca.HasValue && p.CodMarca != CodMarca.Value) ||
+                    (CodCategoria.HasValue && p.CodCategoria != CodCategoria.Value))
+                {
+                    continue;
+                }
+                filtrados.Add(p);
+            }
+
+            List<ProductoModelViewList> resultado = new List<ProductoModelViewList>();
+
+            foreach (var e in filtrados)
+            {
+                resultado.Add(new ProductoModelViewList
+                {
+                    Codigo = e.Codigo,
+                    Descripcion = e.Descripcion,
+                    Marca = (e.MarcaObj != null) ? e.MarcaObj.Descripcion : "",
+                    Categoria = (e.CategoriaObj != null) ? e.CategoriaObj.Descripcion : "",
+                    Precio = e.Precio,
+                    Stock = e.Stock,
+                    Disponibilidad = e.Disponible ? "Si" : "No"
+                });
+            }
+
+            var datatable = new DataTableProducto { data = resultado };
             return Content(JsonConvert.SerializeObject(datatable));
         }
 

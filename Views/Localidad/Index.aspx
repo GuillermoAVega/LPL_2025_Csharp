@@ -24,14 +24,12 @@
         var table = $('#list-localidades').DataTable({
             "language": { "url": "/Content/js/Spanish.json" },
             "ajax": '/Localidad/Listar',
-            "columns": [{ "data": "CodigoPostal" }, { "data": "Nombre" },{"data":null}],
-            "columnDefs":[{"targets": 2 ,"render":function (data, type, row, meta) {
-            return "-";
-        }}]
+            "columns": [{ "data": "CodigoPostal" }, { "data": "Nombre" }, { "data": null}],
+            "columnDefs": [{ "targets": 2, "render": function (data, type, row, meta) { return "<a href='/Localidad/Show?Codigo=" + data.CodigoPostal + "'>editar</a>"; } }]
         });
     }, 150);
-
 </script>
+
 <a href="/Localidad/Create"><img src="/Content/img/add.png" style="width:30px;height:30px"/>Agregar </a>
 </asp:Content>
 

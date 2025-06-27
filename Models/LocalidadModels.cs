@@ -63,6 +63,8 @@ namespace WebDemo.Models
         [Required]        
         [DisplayName("Nombre")]
         public string Nombre { get; set; }
+
+        public List<SelectListItem> LocalidadesList { get; set; }
     }
     public class DataTableLocalidad
     {
