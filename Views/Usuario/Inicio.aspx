@@ -15,7 +15,7 @@
   {%>
   <div class="sidebar-heading">
     usuario: <%: ViewData["usuario"] %>
-</div>
+   </div>
 <div class="sidebar-heading">
     Gesti&oacute;n
 </div>
@@ -40,7 +40,7 @@
 </div>            
 <hr class="sidebar-divider">            
 <li class="nav-item">
-    <a class="nav-link" href="/Home/About">   				
+    <a class="nav-link" href="/">   				
         <span>Salir</span></a>            
 </li>
 <% } %>

@@ -8,7 +8,7 @@
 
    <div class="row static-top shadow" > 
     <div class="col-md-12">
-    <h2>Login Usuario</h2>
+    <h2>Iniciar Sesion</h2>
     </div>
 </div>
 <br />
@@ -30,14 +30,7 @@
         <div class="col-md-2"><%: Html.PasswordFor(m => m.Clave) %>
         <%: Html.ValidationMessageFor(m => m.Clave)%></div>
     </div>
-    <%if (ViewData["SesionIniciada"] != null)      {%>
-    <div class="row">
-        <div class="col-md-2"><%: Html.LabelFor(m => m.ConfirmaClave)%></div>
-        <div class="col-md-2">
-        <%: Html.PasswordFor(m => m.ConfirmaClave)%>
-        <%: Html.ValidationMessageFor(m => m.ConfirmaClave)%></div>
-    </div>
-    <%} %>
+
     <hr />
     <div class="row">
         <div class="col-md-2">
@@ -62,35 +55,4 @@
     <script src="../../Content/js/sweetalert2.js"></script>
 
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="MenuContent" runat="server">
-<%if (ViewData["SesionIniciada"] != null)
-  {%>
-<div class="sidebar-heading">
-    Gesti&oacute;n
-</div>
-<li class="nav-item active">
-    <a class="nav-link" href="/Usuario/CambioClave">
-        <i class="fas fa-fw fa-key"></i>
-        <span>Cambio de clave</span></a>
-</li>
-<li class="nav-item active">
-    <a class="nav-link" href="/Usuario/Comprar">   
-		<i class="fas fa-fw fa-wallet"></i>
-        <span>Compras</span></a>
-</li>
 
-           
-<!-- Divider -->
-<hr class="sidebar-divider d-none d-md-block">
-
-<!-- Sidebar Toggler (Sidebar) -->
-<div class="text-center d-none d-md-inline">
-    <button class="rounded-circle border-0" id="sidebarToggle"></button>
-</div>            
-<hr class="sidebar-divider">            
-<li class="nav-item">
-    <a class="nav-link" href="/Home/About">   				
-        <span>Salir</span></a>            
-</li>
-<% } %>
-</asp:Content>

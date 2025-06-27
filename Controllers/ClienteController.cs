@@ -36,6 +36,7 @@ namespace WebDemo.Controllers
             
             return View(model);
         }
+
         [HttpPost]
         public ActionResult Create(ClienteModel model)        
         {
@@ -65,8 +66,11 @@ namespace WebDemo.Controllers
         public ActionResult Update(ClienteModel model)
         {
             model.LocalidadesList = LocalidadStatic.GetListado();
-            if (!ModelState.IsValid)
-                return View(model);
+
+
+            if (ModelState.IsValid)
+                return Redirect("/Cliente");
+
             Cliente cli = Cliente.FindByKeyStatic(model.Codigo);
             cli.Usuario = model.Usuario;
             cli.Clave = model.Clave;
@@ -80,6 +84,7 @@ namespace WebDemo.Controllers
                 Redirect("/ClienteError");
             return RedirectToAction("/");            
         }
+
         public ActionResult ClienteError()
         {
             return View(); 

@@ -59,6 +59,7 @@
 						<a class="collapse-item" href="/Banco">Bancos</a>
 						<a class="collapse-item" href="/MPago">Medios de pago</a>
 						<a class="collapse-item" href="/Sucursale">Sucursales</a>
+
 						<!-- <a class="collapse-item" href="/Ruta">Rutas(Suc/Dest)</a> -->
                     </div>
                 </div>
@@ -81,6 +82,7 @@
                         <a class="collapse-item" href="/Cliente/ListadoCompradores">Clientes que mas<br />compras hicieron</a>
                         <a class="collapse-item" href="/Producto/ListadoMasVendidos">Productos mas <br />vendidos</a>
                         <a class="collapse-item" href="#">Medios de pago <br />mas usados</a>
+
                     </div>
                 </div>
             </li>          
@@ -93,9 +95,19 @@
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>            
             <hr class="sidebar-divider">            
+
             <li class="nav-item">
-             <a class="nav-link" href="/Home/About">   				
-                    <span>Acerca de nosotros</span></a>            
+
+                        <a class="nav-link" href="/Usuario/"> Iniciar Sesion </a>
+            
+            </li>
+            
+            <br />
+
+            <li class="nav-item" style="margin-top: auto; margin-bottom:20px" >
+
+                 <a class="nav-link"  href="/Home/About"><span>Acerca de nosotros</span></a>            
+            
             </li>
         </ul>
         <!-- End of Sidebar -->

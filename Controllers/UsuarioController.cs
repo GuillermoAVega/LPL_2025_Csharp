@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using WebDemo.Models;
 using AltaLlantaCo.db;
+using Newtonsoft.Json;
 
 namespace WebDemo.Controllers
 {
@@ -15,9 +16,11 @@ namespace WebDemo.Controllers
             if(Session["usuario"]==null)
                 ViewData["SesionIniciada"] = null;
             else
-                ViewData["SesionIniciada"] = null;
+                ViewData["SesionIniciada"] = true;
             return View();
         }
+
+
         [HttpPost]
         public ActionResult Login(UsuarioClaveCambioModel model)
         {
@@ -39,6 +42,7 @@ namespace WebDemo.Controllers
             ViewData["SesionIniciada"] = true;
             return Redirect("/Usuario/Inicio");
         }
+
         public ActionResult Inicio()
         {
             if (Session["usuario"] == null)
@@ -50,5 +54,60 @@ namespace WebDemo.Controllers
             }
             return View();
         }
+
+
+        public ActionResult Comprar() 
+        {
+
+            return View();
+        }
+
+
+        public ActionResult CambioClave()
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public ActionResult CambioClave(UsuarioClaveCambioModel user) 
+        {
+
+            if(Session["usuario"] == null)
+                return RedirectToAction("Index");
+
+            if(user.Clave != user.ConfirmaClave)
+                return RedirectToAction("Index");
+
+            string nombreUsuario = Session["usuario"].ToString();
+            List<Cliente> usuarios = Cliente.FindAllStatic(String.Format("usuario = '{0}'", nombreUsuario));
+
+            var cliente = usuarios[0];
+
+            cliente.Clave = user.Clave;
+
+            if (!cliente.SaveObj())
+                RedirectToAction("Index"); //Implementar.
+
+            return RedirectToAction("Inicio");
+        }
+
+
+        public ActionResult Listar()
+        {
+            var datatable = new DataTableCompra
+            {
+                data = UsuarioModel.GetListadoCompras(Session["usuario"].ToString()).Select(e => new CompraView
+                {
+                    CodFactura = e.CodFactura,
+                    Codigo = e.Codigo,
+                    Fecha = e.Fecha.ToString(),
+                    Entregado = e.Entregado ? "Si" : "No"
+                }).ToList()
+            };
+            return Content(JsonConvert.SerializeObject(datatable));
+        }
+
+
     }
 }

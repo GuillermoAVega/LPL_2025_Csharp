@@ -74,6 +74,7 @@
   <ItemGroup>
     <Compile Include="Controllers\BancoController.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
+    <Compile Include="Controllers\FacturaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LocalidadController.cs" />
     <Compile Include="Controllers\ProductoController.cs" />
@@ -142,6 +143,8 @@
     <Compile Include="Models\BancoModel.cs" />
     <Compile Include="Models\CategoriaModel.cs" />
     <Compile Include="Models\ClienteModel.cs" />
+    <Compile Include="Models\CompraModel.cs" />
+    <Compile Include="Models\FacturaModel.cs" />
     <Compile Include="Models\LocalidadModels.cs" />
     <Compile Include="Models\MarcaModel.cs" />
     <Compile Include="Models\ProductoModel.cs" />
@@ -1870,6 +1873,7 @@
     <Content Include="Views\Cliente\Create.aspx" />
     <Content Include="Views\Cliente\Index.aspx" />
     <Content Include="Views\Error.aspx" />
+    <Content Include="Views\Factura\Show.aspx" />
     <Content Include="Views\Localidad\Create.aspx" />
     <Content Include="Views\Localidad\Index.aspx" />
     <Content Include="Views\Producto\Create.aspx" />
@@ -1877,6 +1881,8 @@
     <Content Include="Views\Producto\Listado.aspx" />
     <Content Include="Views\Producto\ListadoMasVendidos.aspx" />
     <Content Include="Views\Producto\Show.aspx" />
+    <Content Include="Views\Usuario\Comprar.aspx" />
+    <Content Include="Views\Usuario\CambioClave.aspx" />
     <Content Include="Views\Usuario\Inicio.aspx" />
     <Content Include="Views\Usuario\Index.aspx" />
     <Content Include="Web.config" />

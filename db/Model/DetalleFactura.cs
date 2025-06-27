@@ -59,8 +59,29 @@ namespace AltaLlantaCo.db
         #endregion       
  
         #region Relaciones con otras entidades
-        //Factura
-        //Producto
+        public Factura FacturaObj
+        {
+            get
+            {
+                if (_factura == null && _cod_factura != 0)
+                {
+                    _factura = Factura.FindByKeyStatic(_cod_factura);
+                }
+                return _factura;
+            }
+        }
+
+        public Producto ProductoObj
+        {
+            get
+            {
+                if (_producto == null && _cod_producto != 0)
+                {
+                    _producto = Producto.FindByKeyStatic(_cod_producto);
+                }
+                return _producto;
+            }
+        }
         #endregion
     }
 

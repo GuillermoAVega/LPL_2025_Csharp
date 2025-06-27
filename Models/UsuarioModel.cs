@@ -111,5 +111,58 @@ namespace WebDemo.Models
         [Required]
         [DisplayName("Confirma Clave")]
         public string ConfirmaClave { get; set; }
+
+
+    }
+
+    public class UsuarioModel
+    {
+        [Required]
+        [DisplayName("Usuario")]
+        public string Usuario { get; set; }
+
+        [Required]
+        [DisplayName("Clave")]
+        public string Clave { get; set; }
+
+        [Required]
+        [DisplayName("Confirma Clave")]
+        public string ConfirmaClave { get; set; }
+
+        private List<Compra> compras;
+
+        public List<Compra> Compras
+        {
+            get { return UsuarioModel.GetListadoCompras(this.Usuario); }
+
+
+            set { compras = value; }
+        }
+
+        public static Cliente GetCliente(string nombreUsuario) 
+        {
+            List<Cliente> usuarios = Cliente.FindAllStatic(String.Format("usuario = '{0}'", nombreUsuario));
+            return usuarios[0];
+        }
+
+
+        public static List<Compra> GetListadoCompras(string nombreUsuario) {
+
+            var cliente = UsuarioModel.GetCliente(nombreUsuario);
+
+            var listaFacturas = Factura.FindAllStatic(String.Format("cod_cliente = {0}", cliente.Codigo)); 
+
+            List<Compra> listaCompras = new List<Compra>();
+
+            foreach(var factura in listaFacturas)
+            {
+
+                var compras = Compra.FindAllStatic(String.Format("cod_factura = {0}", factura.Codigo));
+                listaCompras.Add(compras[0]);
+            
+            }
+            
+            return listaCompras;
+        }
     }
 }
