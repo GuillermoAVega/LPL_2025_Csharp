@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="Head1" runat="server">
+    <title>Sistema de Gesti&oacute;n - Alta Llanta co <asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Sistema de gestion de venta de compañia Alta Llanta Co.">
+    <meta name="author" content="">    
+    <!-- Custom fonts for this template-->
+    <link href="../../Content/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../../Content/css/fontcss.css"rel="stylesheet">
+    <link href="../../Content/css/sweetalert2.css" rel="stylesheet">    
+    <!-- Custom styles for this template-->
+    <link href="../../Content/css/sb-admin-2.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">                
+                <div class="sidebar-brand-text mx-3">
+				<img src="../../Content/img/neumatico-s.png" class="s-img-logo">
+				</div>
+            </a>            
+
+            <div class="sidebar-heading">
+                Gesti&oacute;n
+            </div>
+			<li class="nav-item active">
+                <a class="nav-link" href="/Cliente/">
+                    <i class="fas fa-fw fa-user-alt"></i>
+                    <span>Clientes</span></a>
+            </li>
+			<li class="nav-item active">
+                <a class="nav-link" href="/Producto/">   
+					<i class="fas fa-fw fa-circle"></i>
+                    <span>Productos</span></a>
+            </li>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Configuraci&oacute;n</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Informaci&oacute;n:</h6>
+                        <a class="collapse-item" href="/Localidad/">Localidades</a>
+                        <a class="collapse-item" href="/Marca">Marcas</a>
+						<a class="collapse-item" href="/Banco">Bancos</a>
+						<a class="collapse-item" href="/MedioPago">Medios de pago</a>
+						<a class="collapse-item" href="/Sucursal">Sucursales</a>
+
+						<!-- <a class="collapse-item" href="/Ruta">Rutas(Suc/Dest)</a> -->
+                    </div>
+                </div>
+            </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider">                        
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-list-alt"></i>
+                    <span>Listados</span>
+                </a>
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="/Cliente/Listado">Clientes</a>
+                        <a class="collapse-item" href="/Producto/Listado">Productos</a>
+                        <br />
+                        <div class="collapse-divider"></div>
+                        <h6 class="collapse-header">Especiales</h6>
+                        <a class="collapse-item" href="/Cliente/ListadoCompradores">Clientes que mas<br />compras hicieron</a>
+                        <a class="collapse-item" href="/Producto/ListadoMasVendidos">Productos mas <br />vendidos</a>
+                        <a class="collapse-item" href="/MedioPago/ListadoMasUsados">Medios de pago <br />mas usados</a>
+
+                    </div>
+                </div>
+            </li>          
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>            
+            <hr class="sidebar-divider">            
+
+            <li class="nav-item">
+
+                        <a class="nav-link" href="/Usuario/"> Iniciar Sesion </a>
+            
+            </li>
+            
+            <br />
+
+            <li class="nav-item" style="margin-top: auto; margin-bottom:20px" >
+
+                 <a class="nav-link"  href="/Home/About"><span>Acerca de nosotros</span></a>            
+            
+            </li>
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <div class="row  shadow">
+                    &nbsp;
+                    </div>
+                    <!-- Page Heading -->                    
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+            <!-- End of Main Content -->
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; LPL 2025</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+    <!-- Bootstrap core JavaScript-->
+    <script  src="../../Content/vendor/jquery/jquery.min.js"></script>
+    <script src="../../Content/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../Content/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="../../Content/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="../../Content/vendor/jquery-easing/jquery.easing.min.js"></script>        
+    <!-- Custom scripts for all pages-->
+    <script src="../../Content/js/sb-admin-2.js"></script>
+    
+    
+</body>
+
+</html>

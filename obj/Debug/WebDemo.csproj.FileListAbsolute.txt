@@ -1,0 +1,90 @@
+c:\users\msantander\documents\visual studio 2010\Projects\WebDemo\WebDemo\bin\WebDemo.dll
+c:\users\msantander\documents\visual studio 2010\Projects\WebDemo\WebDemo\bin\WebDemo.pdb
+c:\users\msantander\documents\visual studio 2010\Projects\WebDemo\WebDemo\obj\Debug\WebDemo.csprojResolveAssemblyReference.cache
+c:\users\msantander\documents\visual studio 2010\Projects\WebDemo\WebDemo\obj\Debug\WebDemo.dll
+c:\users\msantander\documents\visual studio 2010\Projects\WebDemo\WebDemo\obj\Debug\WebDemo.pdb
+c:\users\msantander\documents\visual studio 2010\Projects\WebDemo\WebDemo\bin\Npgsql.dll
+c:\users\msantander\documents\visual studio 2010\Projects\WebDemo\WebDemo\bin\Mono.Security.dll
+c:\users\msantander\documents\visual studio 2010\Projects\WebDemo\WebDemo\bin\Npgsql.pdb
+c:\users\msantander\documents\visual studio 2010\Projects\WebDemo\WebDemo\bin\Npgsql.xml
+c:\users\msantander\documents\visual studio 2010\Projects\WebDemo\WebDemo\bin\de\Npgsql.resources.dll
+c:\users\msantander\documents\visual studio 2010\Projects\WebDemo\WebDemo\bin\es\Npgsql.resources.dll
+c:\users\msantander\documents\visual studio 2010\Projects\WebDemo\WebDemo\bin\fi\Npgsql.resources.dll
+c:\users\msantander\documents\visual studio 2010\Projects\WebDemo\WebDemo\bin\fr\Npgsql.resources.dll
+c:\users\msantander\documents\visual studio 2010\Projects\WebDemo\WebDemo\bin\ja\Npgsql.resources.dll
+c:\users\msantander\documents\visual studio 2010\Projects\WebDemo\WebDemo\bin\zh-CN\Npgsql.resources.dll
+C:\Users\msantander\Documents\Visual Studio 2010\Projects\WebDemo\WebDemo\bin\Newtonsoft.Json.dll
+C:\Users\msantander\Documents\Visual Studio 2010\Projects\WebDemo\WebDemo\bin\Newtonsoft.Json.pdb
+C:\Users\msantander\Documents\Visual Studio 2010\Projects\WebDemo\WebDemo\bin\Newtonsoft.Json.xml
+C:\Users\guill\Desktop\TpFinal_C#\obj\Debug\WebDemo.csprojResolveAssemblyReference.cache
+C:\Users\guill\Desktop\TpFinal_C#\obj\Debug\WebDemo.dll
+C:\Users\guill\Desktop\TpFinal_C#\bin\WebDemo.dll
+C:\Users\guill\Desktop\TpFinal_C#\bin\WebDemo.pdb
+C:\Users\guill\Desktop\TpFinal_C#\bin\Newtonsoft.Json.dll
+C:\Users\guill\Desktop\TpFinal_C#\bin\Npgsql.dll
+C:\Users\guill\Desktop\TpFinal_C#\bin\Mono.Security.dll
+C:\Users\guill\Desktop\TpFinal_C#\bin\Newtonsoft.Json.pdb
+C:\Users\guill\Desktop\TpFinal_C#\bin\Newtonsoft.Json.xml
+C:\Users\guill\Desktop\TpFinal_C#\bin\Npgsql.pdb
+C:\Users\guill\Desktop\TpFinal_C#\bin\Npgsql.xml
+C:\Users\guill\Desktop\TpFinal_C#\bin\de\Npgsql.resources.dll
+C:\Users\guill\Desktop\TpFinal_C#\bin\es\Npgsql.resources.dll
+C:\Users\guill\Desktop\TpFinal_C#\bin\fi\Npgsql.resources.dll
+C:\Users\guill\Desktop\TpFinal_C#\bin\fr\Npgsql.resources.dll
+C:\Users\guill\Desktop\TpFinal_C#\bin\ja\Npgsql.resources.dll
+C:\Users\guill\Desktop\TpFinal_C#\bin\zh-CN\Npgsql.resources.dll
+C:\Users\guill\Desktop\TpFinal_C#\obj\Debug\WebDemo.pdb
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\obj\Debug\WebDemo.csprojResolveAssemblyReference.cache
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\obj\Debug\WebDemo.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\WebDemo.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\WebDemo.pdb
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\Newtonsoft.Json.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\Npgsql.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\Mono.Security.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\Newtonsoft.Json.pdb
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\Newtonsoft.Json.xml
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\Npgsql.pdb
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\Npgsql.xml
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\de\Npgsql.resources.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\es\Npgsql.resources.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\fi\Npgsql.resources.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\fr\Npgsql.resources.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\ja\Npgsql.resources.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\bin\zh-CN\Npgsql.resources.dll
+C:\Users\guill\Desktop\Guille\Compartida\FACULTAD\3° AÑO\Lab. de Programacion y Lenguajes\Práctica\TP_Final_Csharp\obj\Debug\WebDemo.pdb
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\WebDemo.dll
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\WebDemo.pdb
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\Newtonsoft.Json.dll
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\Npgsql.dll
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\Mono.Security.dll
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\Newtonsoft.Json.pdb
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\Newtonsoft.Json.xml
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\Npgsql.pdb
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\Npgsql.xml
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\de\Npgsql.resources.dll
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\es\Npgsql.resources.dll
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\fi\Npgsql.resources.dll
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\fr\Npgsql.resources.dll
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\ja\Npgsql.resources.dll
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\bin\zh-CN\Npgsql.resources.dll
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\obj\Debug\WebDemo.dll
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\obj\Debug\WebDemo.pdb
+C:\Users\Franco\Documents\C_SHARP\tpfinalCsharp\LPL_2025_Csharp\obj\Debug\WebDemo.csprojResolveAssemblyReference.cache
+C:\Users\guill\Desktop\LPL_2025_Csharp-main\bin\WebDemo.dll
+C:\Users\guill\Desktop\LPL_2025_Csharp-main\bin\WebDemo.pdb
+C:\Users\guill\Desktop\LPL_2025_Csharp-main\bin\Newtonsoft.Json.dll
+C:\Users\guill\Desktop\LPL_2025_Csharp-main\bin\Npgsql.dll
+C:\Users\guill\Desktop\LPL_2025_Csharp-main\bin\Mono.Security.dll
+C:\Users\guill\Desktop\LPL_2025_Csharp-main\bin\Newtonsoft.Json.pdb
+C:\Users\guill\Desktop\LPL_2025_Csharp-main\bin\Newtonsoft.Json.xml
+C:\Users\guill\Desktop\LPL_2025_Csharp-main\bin\Npgsql.pdb
+C:\Users\guill\Desktop\LPL_2025_Csharp-main\bin\Npgsql.xml
+C:\Users\guill\Desktop\LPL_2025_Csharp-main\bin\de\Npgsql.resources.dll
+C:\Users\guill\Desktop\LPL_2025_Csharp-main\bin\es\Npgsql.resources.dll
+C:\Users\guill\Desktop\LPL_2025_Csharp-main\bin\fi\Npgsql.resources.dll
+C:\Users\guill\Desktop\LPL_2025_Csharp-main\bin\fr\Npgsql.resources.dll
+C:\Users\guill\Desktop\LPL_2025_Csharp-main\bin\ja\Npgsql.resources.dll
+C:\Users\guill\Desktop\LPL_2025_Csharp-main\bin\zh-CN\Npgsql.resources.dll
+C:\Users\guill\Desktop\LPL_2025_Csharp-main\obj\Debug\WebDemo.csprojResolveAssemblyReference.cache
+C:\Users\guill\Desktop\LPL_2025_Csharp-main\obj\Debug\WebDemo.dll
+C:\Users\guill\Desktop\LPL_2025_Csharp-main\obj\Debug\WebDemo.pdb
